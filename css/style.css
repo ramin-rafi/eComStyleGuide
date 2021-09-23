@@ -61,6 +61,7 @@ p + p {
 }
 
 /* Helper Class CSS */
+.productList::after,
 .filter-icons::after,
 .row:after,
 .clear::after,
@@ -881,4 +882,81 @@ strike {
 
 .banner .imgtext {
 	margin-left: 20px;
+}
+
+/* Modal Overlay */
+.overlay {
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+	cursor: pointer; /* Add a pointer on hover */
+	height: 100%; /* Full height (cover the whole page) */
+	left: 0;
+	right: 0;
+	position: fixed; /* Sit on top of the page content */
+	top: 0;
+	width: 100%; /* Full width (cover the whole page) */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.overlay .heading {
+	margin: 50px 250px;
+	background-color: var(--white);
+	filter: drop-shadow(0 0 3px var(--lightGray));
+}
+
+/* Product List View */
+
+.productList {
+	display: relative;
+}
+
+.details {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+.details span:first-child {
+	display: block;
+}
+
+.text {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.review {
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--gray);
+	padding: 0px 8px;
+}
+
+.details a {
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--blue);
+}
+
+.price {
+	margin: 10px 0;
+}
+
+.discountedPrice {
+	color: var(--blue);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 180%;
+	letter-spacing: 0.5px;
+}
+
+.productList .image {
+	float: left;
+	width: 30%;
+}
+
+.details {
+	float: right;
+	margin-top: -250px;
+	width: 70%;
 }
