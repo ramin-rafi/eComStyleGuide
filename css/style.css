@@ -957,6 +957,17 @@ strike {
 
 .details {
 	float: right;
-	margin-top: -250px;
+	margin-top: -285px;
 	width: 70%;
+}
+
+.addToCart {
+	background-color: var(--skyBlue);
+	color: var(--blueFocus);
+	min-width: 150px !important;
+}
+
+.heart {
+	margin-left: 14px;
+	min-width: 46px !important;
 }
